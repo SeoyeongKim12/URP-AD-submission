@@ -1,4 +1,4 @@
-# C4c — 감독시간 검증 완결 (sjlee)
+# C4c — 감독시간 검증 완결
 
 입력 supervision_time.csv: 7241행
 
