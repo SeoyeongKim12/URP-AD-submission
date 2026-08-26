@@ -21,7 +21,7 @@ library(lme4)
 library(lmerTest)
 
 # ---- 1. 데이터 경로 ----
-DATA_DIR <- "C:/Users/82109/Downloads/c-path/preprocessed"  # 역슬래시 대신 슬래시 사용 (R 관례, 둘 다 동작함)
+DATA_DIR <- path.expand("~/Downloads/preprocessed")  # 사용자 홈 기준 상대경로 (Windows/Mac 공통)
 
 ds_path <- file.path(DATA_DIR, "aim3_long_ds_total.csv")
 b2_path <- file.path(DATA_DIR, "aim3_long_b2_expected.csv")
