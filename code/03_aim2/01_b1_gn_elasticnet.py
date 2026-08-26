@@ -9,7 +9,7 @@ Aim 2 · Gn 정식 확정 — 엘라스틱넷 부분비례오즈 (sjlee)
 추가 점검: 비평행 모형의 비단조 확률(P(Y≥k)가 k에서 증가) 발생률·클립된 음수질량.
 
 입력: ~/Downloads/ { adl_wide.csv, baseline_sample.csv }
-산출: aim2/b1_gn_elasticnet_report.md, aim2/aim2_sjlee/gn_en_cv_predictions.csv
+산출: aim2/b1_gn_elasticnet_report.md, aim2/aim2_patient_level/gn_en_cv_predictions.csv
 """
 from pathlib import Path
 import numpy as np
@@ -21,7 +21,7 @@ from sklearn.linear_model import LogisticRegression
 
 DOWNLOADS = Path.home() / "Downloads"
 OUTDIR = Path(__file__).parent
-CSV_OUT = OUTDIR / "aim2_sjlee"; CSV_OUT.mkdir(exist_ok=True)
+CSV_OUT = OUTDIR / "aim2_patient_level"; CSV_OUT.mkdir(exist_ok=True)
 REPORT = OUTDIR / "b1_gn_elasticnet_report.md"
 TRIALS = ["AD-1061", "AD-1063", "AD-1064"]
 STAGES = np.arange(6)

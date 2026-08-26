@@ -1,5 +1,5 @@
 """
-Aim 1 · 결측 민감도 — M1 
+Aim 1 · 결측 민감도 — M1
 =================================
 AD-1061의 선택적 DS 결측(기저 완전관측 미보유 ~28.5%)이 주 결론을 왜곡했는지 점검.
 두 방식: M1-a(AD-1061 제외) / M1-b(AD-1061 내 안정화 IPW 가중).
@@ -9,7 +9,7 @@ AD-1061의 선택적 DS 결측(기저 완전관측 미보유 ~28.5%)이 주 결�
 입력: ~/Downloads/ { baseline_sample, supervision_time, ds_wide, mmse_wide, adl_wide, dm_filtered }
       dm_filtered.csv는 M1-b(IPW)에만 필요 — 없으면 M1-a만 실행.
 산출: aim1/aim1_sensitivity_missing_report.md
-      aim1/aim1_sjlee/aim1_ad1061_ipw_weights.csv (환자단위 → git 제외, Drive)
+      aim1/aim1_patient_level/aim1_ad1061_ipw_weights.csv (환자단위 → git 제외, Drive)
 """
 from pathlib import Path
 import numpy as np
@@ -21,7 +21,7 @@ import statsmodels.formula.api as smf
 
 DOWNLOADS = Path.home() / "Downloads"
 OUTDIR = Path(__file__).parent
-CSV_OUT = OUTDIR / "aim1_sjlee"; CSV_OUT.mkdir(exist_ok=True)
+CSV_OUT = OUTDIR / "aim1_patient_level"; CSV_OUT.mkdir(exist_ok=True)
 REPORT = OUTDIR / "aim1_sensitivity_missing_report.md"
 _lines = []
 def log(s=""):
@@ -185,7 +185,7 @@ def M1b(df):
 
 
 def main():
-    log("# Aim 1 · 결측 민감도 리포트 — M1 (sjlee)\n")
+    log("# Aim 1 · 결측 민감도 리포트 — M1\n")
     df = load_base()
     log(f"공통표본 {len(df)}명 (감독시간 결합).\n")
     M1a(df)

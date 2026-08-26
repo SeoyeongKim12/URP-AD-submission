@@ -11,7 +11,7 @@ ds_wide+adl_wide 기저 조인만으로 근사 재현한다.
 주의: 정식 D2는 baseline_sample의 in_common_comparison_sample(2,203명)로 다시
 계산해야 함. 여기 표본은 '기저 & DS완전 & A0(또는A1) 산출가능' 근사 표본.
 
-산출: aim1_sjlee/aim1_preliminary_report.md
+산출: aim1_preliminary_report.md
 """
 from pathlib import Path
 import numpy as np
@@ -63,7 +63,7 @@ def concordance(true_s, pred_s, name):
 
 
 def main():
-    log("# Aim 1 예비 일치도 — 채점 컬럼 독립 재확인 (sjlee)\n")
+    log("# Aim 1 예비 일치도 — 채점 컬럼 독립 재확인\n")
     ds = pd.read_csv(DOWNLOADS / "ds_wide.csv")
     adl = pd.read_csv(DOWNLOADS / "adl_wide.csv", low_memory=False)
 

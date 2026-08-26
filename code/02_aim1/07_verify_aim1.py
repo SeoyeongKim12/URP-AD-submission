@@ -1,7 +1,7 @@
 """
-Aim 1 결과 독립 검증 코드
+Aim 1 결과 독립 검증 코드 (시연)
 ==================================
-목적: 팀원이 산출한 aim1/ 결과물(Aim1_정식결과_sjlee.md, aim1_*_report.md,
+목적: 팀원이 산출한 aim1/ 결과물(Aim1_정식결과.md, aim1_*_report.md,
 aim1_common_sample_scored.csv 등)을 팀원 코드(aim1_formal.py 등)를 실행하지 않고,
 원자료(dependence_study_csv/)에서 처음부터 새로 짠 코드로 핵심 수치를 재계산해 대조한다.
 
@@ -13,7 +13,7 @@ aim1_common_sample_scored.csv 등)을 팀원 코드(aim1_formal.py 등)를 실�
   - supervision_time.csv : RUD 감독시간 파생값
 
 대조 대상(팀원 산출물, urp-AD/aim1/):
-  - Aim1_정식결과_sjlee.md, aim1_formal_report.md, aim1_supervision_report.md
+  - Aim1_정식결과.md, aim1_formal_report.md, aim1_supervision_report.md
 
 주의: 이 코드는 팀원 코드(aim1_formal.py, aim1_supervision.py)와 로직을 공유하지 않고
 독립적으로 작성함. 같은 원자료에서 같은 숫자가 나오는지만 확인하는 것이 목적이며,

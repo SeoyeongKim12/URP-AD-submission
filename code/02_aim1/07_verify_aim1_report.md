@@ -1,9 +1,9 @@
-# Aim 1 결과 독립 검증
+# Aim 1 결과 독립 검증 (시연)
 
 검증일: 2026-08-06
 검증 코드: `aim1_검증_코드_sy.py` (팀원 코드 aim1_formal.py/aim1_supervision.py와 무관하게 새로 작성)
 원자료: `dependence_study_csv/` (baseline_sample.csv, mmse_wide.csv, supervision_time.csv)
-대조 대상: `aim1/Aim1_정식결과_sjlee.md`, `aim1/aim1_formal_report.md`, `aim1/aim1_supervision_report.md`
+대조 대상: `aim1/Aim1_정식결과.md`, `aim1/aim1_formal_report.md`, `aim1/aim1_supervision_report.md`
 
 검증 방식: 팀원 코드를 실행한 게 아니라 원자료에서 처음부터 다시 짠 코드로 핵심 지표를
 재계산해 팀원 리포트 수치와 대조함. 로직 자체가 계획서(연구계획서 §2.3)와 부합하는지는

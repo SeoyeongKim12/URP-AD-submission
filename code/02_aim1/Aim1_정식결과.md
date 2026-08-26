@@ -4,7 +4,7 @@
 분석 코드: `aim1_formal.py`(가), `aim1_sensitivity.py`(가 민감도), `aim1_supervision.py`(나)
 자동 리포트: `aim1_formal_report.md`, `aim1_sensitivity_report.md`, `aim1_supervision_report.md`
 입력: `ds_wide.csv`, `adl_wide.csv`, `baseline_sample.csv`, `mmse_wide.csv`, `supervision_time.csv`
-전제: 전처리 독립 검증(C1~C5 + C4c) 완결 — `../전처리/검증결과_독립검증_sjlee.md`
+전제: 전처리 독립 검증(C1~C5 + C4c) 완결 — `../01_전처리/검증결과_독립검증.md`
 
 > **연구 질문**: 실측 Dependence Scale(DS)을 준거로,
 > **가**) 알고리즘 채점 A0(Chandler 2025 조화)·A1(Kahle-Wrobleski 2015) 중 어느 쪽이 DS와
@@ -93,7 +93,7 @@
 - 연속: Spearman(과대평가폭, bADL손상수)=+0.285 > (iADL손상수)=+0.113 → bADL 기여가 큼.
 - 도메인 그리드: bADL 손상자 중 **iADL이 보존될수록 과대평가율↑**(50.5% vs 39.9%).
 
-> **정의 주석(sjlee)**: 지시서 문구 'iADL 온전 + bADL 비만점'에서 iADL '완전 온전'은
+> **정의 주석**: 지시서 문구 'iADL 온전 + bADL 비만점'에서 iADL '완전 온전'은
 > 표본에 6명뿐(AD 집단은 iADL이 먼저 손상)이라 그대로는 검정 불가. iADL '온전'을
 > **상대적 보존(손상≤2)**으로 근사하니 지시서 방향이 **과대평가 최정점 셀**로 재현됨
 > (근사 플래그 n=4, 과대평가 75%, 검정력은 부족). 대조군 임상서명(bADL 온전+iADL 손상,
@@ -206,8 +206,8 @@ A0/A1의 입력이기도 해 보정 독립성은 그만큼 약함(순환논리�
 민감도 M1(제외·IPW)·M2·M3 전부에서 견고. 다음은 팀원의 Aim 2(B1) — 인계 시 이 문서 하나로 충분.
 
 - 산출 CSV(환자단위, **git 금지 → Drive `AIM 1/`**):
-  - `aim1_sjlee/aim1_common_sample_scored.csv` (가: 공통표본 채점표)
-  - `aim1_sjlee/aim1_supervision_analysis.csv` (나: 감독시간+지표 분석표)
-  - `aim1_sjlee/aim1_ad1061_ipw_weights.csv` (M1-b IPW 가중치표, dm_filtered 확보 후 생성)
+  - `aim1_patient_level/aim1_common_sample_scored.csv` (가: 공통표본 채점표)
+  - `aim1_patient_level/aim1_supervision_analysis.csv` (나: 감독시간+지표 분석표)
+  - `aim1_patient_level/aim1_ad1061_ipw_weights.csv` (M1-b IPW 가중치표, dm_filtered 확보 후 생성)
 - **다음 세션(Aim 2)**: B1(비례오즈 대안 채점법)을 시험별 3-fold CV로 개발. 기준선 = A1(가 카파 0.498) +
   나의 교훈(연속 DS 총점이 감독시간 구분 최고) → B1은 단계 일치와 돌봄부담 구분력을 함께 목표.

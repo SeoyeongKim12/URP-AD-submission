@@ -1,4 +1,4 @@
-# Aim 1 · 나(감독 부담) 분석 리포트 — N1·N2·N3
+# Aim 1 · 나(감독 부담) 분석 리포트 — N1·N2·N3 (sjlee)
 
 입력 병합 2202명 → 분석표본 2135명 (감독시간관측·비정합제외). 감독 있음 922명 (43.2%).
 
@@ -102,4 +102,4 @@
 - 민감도A '시간·일수 중 하나라도 양수면 감독': 감독비율 43.2% (주 정의와 동일군 — 비정합 이미 제외).
 - 민감도B '시간0·일수양수를 1부에만 포함' / 민감도C '감독시간 단독(124A) 정의'는 원본 124A/B 컬럼 필요 — 구조 동일, 결론 방향 불변 예상(주석).
 
-산출: C:\Users\user\OneDrive - 이화여자대학교\문서\urp-AD\aim1\aim1_patient_level\aim1_supervision_analysis.csv (환자단위, git 제외 → Drive)
+산출: C:\Users\82109\Downloads\URP-AD-submission\code\02_aim1\aim1_sjlee\aim1_supervision_analysis.csv (환자단위, git 제외 → Drive)

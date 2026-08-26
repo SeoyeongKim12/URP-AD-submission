@@ -26,4 +26,4 @@
 - 클립된 음수 확률질량 총합: 1.537 (인당 평균 0.0007)
 - 판정: 비단조 상당함 → 단조 제약(isotonic) 또는 결합 순서형 모형 검토 필요.
 
-산출: C:\Users\user\OneDrive - 이화여자대학교\문서\urp-AD\aim2\시행착오\aim2_sjlee\gn_en_cv_predictions.csv (환자단위 → Drive)
+산출: C:\Users\user\OneDrive - 이화여자대학교\문서\urp-AD\aim2\시행착오\aim2_patient_level\gn_en_cv_predictions.csv (환자단위 → Drive)

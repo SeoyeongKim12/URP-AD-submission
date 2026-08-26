@@ -1,4 +1,4 @@
-# Aim 1 · 결측 민감도 리포트 — M1
+# Aim 1 · 결측 민감도 리포트 — M1 (sjlee)
 
 공통표본 2203명 (감독시간 결합).
 
@@ -28,4 +28,4 @@
 
 - 판정: IPW 가중 후에도 가 A1>A0 유지, 나 DS총점 최고 유지 → 결론 견고.
 - **한계**: MAR 가정 의존(미측정 사유의 선택편향은 못 없앰). 성향모형의 ADCS-ADL 총점이 평가대상 A0/A1의 입력이기도 해 보정 독립성 주장은 그만큼 약함(순환논리는 아님).
-- 산출: C:\Users\user\OneDrive - 이화여자대학교\문서\urp-AD\aim1\aim1_patient_level\aim1_ad1061_ipw_weights.csv (환자단위 → Drive)
+- 산출: C:\Users\82109\Downloads\URP-AD-submission\code\02_aim1\aim1_sjlee\aim1_ad1061_ipw_weights.csv (환자단위 → Drive)

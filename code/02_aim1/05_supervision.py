@@ -13,7 +13,7 @@ N3 두 부분 모형(로지스틱+감마, 결합 예측오차, GERAS 참조 대�
 
 입력: ~/Downloads/ { supervision_time.csv, baseline_sample.csv, mmse_wide.csv }
 산출: aim1/aim1_supervision_report.md
-     aim1/aim1_sjlee/aim1_supervision_analysis.csv (환자단위 → git 제외, Drive)
+     aim1/aim1_patient_level/aim1_supervision_analysis.csv (환자단위 → git 제외, Drive)
 """
 from pathlib import Path
 import numpy as np
@@ -24,7 +24,7 @@ import statsmodels.formula.api as smf
 
 DOWNLOADS = Path.home() / "Downloads"
 OUTDIR = Path(__file__).parent
-CSV_OUT = OUTDIR / "aim1_sjlee"; CSV_OUT.mkdir(exist_ok=True)
+CSV_OUT = OUTDIR / "aim1_patient_level"; CSV_OUT.mkdir(exist_ok=True)
 REPORT = OUTDIR / "aim1_supervision_report.md"
 RNG_SEED = 20260805
 INDICES = ["ds_stage", "ds_total", "A1_2015_stage", "A0_harmonized"]
@@ -263,7 +263,7 @@ def N3(df):
 
 
 def main():
-    log("# Aim 1 · 나(감독 부담) 분석 리포트 — N1·N2·N3 (sjlee)\n")
+    log("# Aim 1 · 나(감독 부담) 분석 리포트 — N1·N2·N3\n")
     df, n0 = load()
     log(f"입력 병합 {n0}명 → 분석표본 {len(df)}명 "
         f"(감독시간관측·비정합제외). 감독 있음 {df['present'].sum()}명 "

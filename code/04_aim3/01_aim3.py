@@ -51,7 +51,7 @@ try:
     DATA_DIR = '/content/drive/MyDrive/2026 urp/preprocessed'
 except ImportError:
     from pathlib import Path
-    DATA_DIR = str(Path.home() / "Downloads" / "preprocessed")
+    DATA_DIR = str(Path.home() / "Downloads")  # 전처리 단계 생략, csv 바로 사용
 
 TAU4, TAU5 = 0.08, 0.56          # Aim2 확정 임계값
 BOOTSTRAP_B = 2000                 # 확정: B=2000

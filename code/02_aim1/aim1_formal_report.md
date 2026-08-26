@@ -1,4 +1,4 @@
-# Aim 1 정식 분석 리포트
+# Aim 1 정식 분석 리포트 (sjlee)
 
 입력 확보: ds_wide✓ adl_wide✓ baseline_sample✓ mmse_wide✓
 
@@ -100,7 +100,7 @@ ds_stage
 
 가설: A1이 초기 AD에서 의존도를 과대평가 → 실측 DS 대비 A1 과대평가가 특정 bADL/iADL 손상 패턴에 집중되는가.
 
-> **정의 주의**: 지시서의 'iADL 온전 + bADL 비만점'에서 '완전 온전'은 6명뿐(AD 집단은 iADL이 먼저 손상)이라, iADL '온전'을 **상대적 보존(손상≤2)**으로 근사함. 방향(iADL 보존·bADL 손상 → 과대평가)은 아래 그리드에서 실제로 재현됨. 대조군으로 임상서명(bADL 온전+iADL 손상)도 함께 보고.
+> **정의 주의(sjlee)**: 지시서의 'iADL 온전 + bADL 비만점'에서 '완전 온전'은 6명뿐(AD 집단은 iADL이 먼저 손상)이라, iADL '온전'을 **상대적 보존(손상≤2)**으로 근사함. 방향(iADL 보존·bADL 손상 → 과대평가)은 아래 그리드에서 실제로 재현됨. 대조군으로 임상서명(bADL 온전+iADL 손상)도 함께 보고.
 
 - bADL 문항 6개, iADL 문항 18개 사용, n=2203
 
@@ -141,4 +141,4 @@ bADL온전              217           803
 - 종합: **A1의 과대평가는 bADL 경미손상을 2015판 규칙이 과벌점하는 데서 비롯**(2단계↑ 과대평가 6.4%). 실측 DS 기준 진단 성립.
 
 
-산출: C:\Users\user\OneDrive - 이화여자대학교\문서\urp-AD\aim1\aim1_patient_level\aim1_common_sample_scored.csv (환자단위, git 제외)
+산출: C:\Users\82109\Downloads\URP-AD-submission\code\02_aim1\aim1_sjlee\aim1_common_sample_scored.csv (환자단위, git 제외)

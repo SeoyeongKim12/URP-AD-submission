@@ -179,7 +179,7 @@ def M3(df):
 
 
 def main():
-    log("# Aim 1 · 나 민감도 리포트 — M2·M3 (sjlee)\n")
+    log("# Aim 1 · 나 민감도 리포트 — M2·M3\n")
     df = load_raw()
     log(f"공통표본 ∩ 감독관측 = {len(df)} (비정합 {int(df['inconsistent_flag'].sum())} 포함)\n")
     M2(df)

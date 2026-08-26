@@ -6,7 +6,7 @@ Aim 1 정식 분석 — B1~B6
   ③ 부트스트랩 CI          ④ A1 과대평가 진단 검정
 
 입력: ~/Downloads/  { ds_wide.csv, adl_wide.csv, baseline_sample.csv, mmse_wide.csv }
-산출: aim1/aim1_formal_report.md  +  aim1/aim1_sjlee/*.csv (환자단위 → git 금지, Drive)
+산출: aim1/aim1_formal_report.md  +  aim1/aim1_patient_level/*.csv (환자단위 → git 금지, Drive)
 
 계획서 §2.3 설계. 주 척도 0-5 (ds_stage vs A0_harmonized / A1_2015_stage),
 A0 원척도(0-6)는 Spearman + 교차표로 별도 보고.
@@ -19,7 +19,7 @@ from scipy.stats import spearmanr
 
 DOWNLOADS = Path.home() / "Downloads"
 OUTDIR = Path(__file__).parent
-CSV_OUT = OUTDIR / "aim1_sjlee"          # 환자단위 산출 → .gitignore 대상
+CSV_OUT = OUTDIR / "aim1_patient_level"          # 환자단위 산출 → .gitignore 대상
 CSV_OUT.mkdir(exist_ok=True)
 REPORT = OUTDIR / "aim1_formal_report.md"
 
@@ -263,7 +263,7 @@ def B6(cm, adl):
     log("## B6. 2015판(A1) 과대평가 진단 독립검정\n")
     log("가설: A1이 초기 AD에서 의존도를 과대평가 → 실측 DS 대비 A1 과대평가가 "
         "특정 bADL/iADL 손상 패턴에 집중되는가.\n")
-    log("> **정의 주의(sjlee)**: 지시서의 'iADL 온전 + bADL 비만점'에서 '완전 온전'은 "
+    log("> **정의 주의**: 지시서의 'iADL 온전 + bADL 비만점'에서 '완전 온전'은 "
         "6명뿐(AD 집단은 iADL이 먼저 손상)이라, iADL '온전'을 **상대적 보존(손상≤2)**으로 "
         "근사함. 방향(iADL 보존·bADL 손상 → 과대평가)은 아래 그리드에서 실제로 재현됨. "
         "대조군으로 임상서명(bADL 온전+iADL 손상)도 함께 보고.\n")
@@ -352,7 +352,7 @@ def _test_pattern(j, col):
 
 
 def main():
-    log("# Aim 1 정식 분석 리포트 (sjlee)\n")
+    log("# Aim 1 정식 분석 리포트\n")
     need = ["ds_wide.csv", "adl_wide.csv"]
     missing_core = [f for f in need if not (DOWNLOADS / f).exists()]
     if missing_core:
