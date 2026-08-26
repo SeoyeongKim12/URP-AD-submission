@@ -1,4 +1,4 @@
-# Aim 1 결과 독립 검증 (시연)
+# Aim 1 결과 독립 검증
 
 검증일: 2026-08-06
 검증 코드: `aim1_검증_코드_sy.py` (팀원 코드 aim1_formal.py/aim1_supervision.py와 무관하게 새로 작성)
