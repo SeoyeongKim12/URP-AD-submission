@@ -72,7 +72,7 @@ def enet_probs(m, C):
         sc = StandardScaler().fit(imp.transform(m.loc[tri, ITEMS]))
         Ztr = sc.transform(imp.transform(m.loc[tri, ITEMS])); Zte = sc.transform(imp.transform(m.loc[tei, ITEMS]))
         y = m.loc[tri, "ds_stage"].astype(int).values
-        geq = {k: LogisticRegression(solver="saga", l1_ratio=L1_RATIO, C=C,
+        geq = {k: LogisticRegression(penalty="elasticnet", solver="saga", l1_ratio=L1_RATIO, C=C,
                                      max_iter=6000, tol=1e-3, random_state=0).fit(Ztr, (y >= k).astype(int)).predict_proba(Zte)[:, 1]
                for k in range(1, 6)}
         Q = np.zeros((len(tei), 6)); Q[:, 0] = 1 - geq[1]
@@ -92,7 +92,7 @@ def enet_probs_traintest(m):
         Ztr = sc.transform(imp.transform(m.loc[tri, ITEMS])); Zte = sc.transform(imp.transform(m.loc[tei, ITEMS]))
         y = m.loc[tri, "ds_stage"].astype(int).values
         def build(Z, C):
-            geq = {k: LogisticRegression(solver="saga", l1_ratio=L1_RATIO, C=C,
+            geq = {k: LogisticRegression(penalty="elasticnet", solver="saga", l1_ratio=L1_RATIO, C=C,
                                          max_iter=6000, tol=1e-3, random_state=0).fit(Ztr, (y >= k).astype(int)).predict_proba(Z)[:, 1]
                    for k in range(1, 6)}
             Q = np.zeros((Z.shape[0], 6)); Q[:, 0] = 1 - geq[1]
@@ -180,14 +180,14 @@ def final_scoretable(m, C=0.1):
     y = m["ds_stage"].astype(int).values
     coef_raw = {}; intc_raw = {}
     for k in range(1, 6):
-        lr = LogisticRegression(solver="saga", l1_ratio=L1_RATIO, C=C,
+        lr = LogisticRegression(penalty="elasticnet", solver="saga", l1_ratio=L1_RATIO, C=C,
                                 max_iter=6000, tol=1e-3, random_state=0).fit(Z, (y >= k).astype(int))
         w = lr.coef_[0]; b0 = lr.intercept_[0]
         coef_raw[k] = w / sd                                  # 원 눈금 계수
         intc_raw[k] = b0 - np.sum(w * mu / sd)                # 원 눈금 절편
     # 전체자료 확률 → 최종 τ (A0 목표)
     def probs():
-        geq = {k: LogisticRegression(solver="saga", l1_ratio=L1_RATIO, C=C,
+        geq = {k: LogisticRegression(penalty="elasticnet", solver="saga", l1_ratio=L1_RATIO, C=C,
                                      max_iter=6000, tol=1e-3, random_state=0).fit(Z, (y >= k).astype(int)).predict_proba(Z)[:, 1]
                for k in range(1, 6)}
         P = np.zeros((len(m), 6)); P[:, 0] = 1 - geq[1]
