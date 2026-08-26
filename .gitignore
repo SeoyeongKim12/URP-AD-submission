@@ -1,0 +1,22 @@
+# === 환자단위 데이터는 절대 커밋 금지 (민감정보 → 드라이브 전용) ===
+# 행=환자(USUBJID 포함) CSV/parquet. result/의 집계표는 명시적으로 추적됨.
+*.parquet
+# 환자단위 예측/원자료 파일명 패턴 (백스톱)
+*predictions*.csv
+*_wide.csv
+baseline_sample.csv
+dm_filtered.csv
+supervision_time.csv
+*ipw_weights*.csv
+*cluster_assign*.csv
+aim3_long_*.csv
+
+# === 환경/캐시/임시 ===
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.RData
+run.log
+*.xlsx

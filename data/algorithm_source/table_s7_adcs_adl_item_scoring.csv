@@ -1,0 +1,91 @@
+﻿question_num,question_label,item_score,response_option_text,revised_assistance_level
+1,Eating,3,ate without help + knife,bADL - independent
+1,Eating,2,fork or spoon but no knife,bADL - independent
+1,Eating,1,fingers,bADL - limited assistance
+1,Eating,0,fed by someone else,bADL - physical help/dependent
+2,Walking,3,"mobile outside home, no help",bADL - independent
+2,Walking,2,"mobile across room, no help",bADL - reduced level of independent function
+2,Walking,1,"transfer from bed to chair, no help",bADL - physical help/dependent
+2,Walking,0,physical help to walk or transfer,bADL - physical help/dependent
+3,Toileting,3,independent,bADL - independent
+3,Toileting,2,supervision but no physical help,bADL - supervision needed
+3,Toileting,1,"continent, but needs physical help",bADL - physical help/dependent
+3,Toileting,0,incontinent and needs physical help,bADL - physical help/dependent
+4,Bathing,3,independent,bADL - independent
+4,Bathing,2,supervision/reminders but no physical help,bADL - supervision needed
+4,Bathing,1,"minor physical help (e.g., hair wash)",bADL - limited assistance
+4,Bathing,0,needs to be bathed,bADL - physical help/dependent
+5,Grooming,3,"cleaned and cut fingernails, no physical help",bADL - independent
+5,Grooming,2,"brushed or combed hair, no physical help",bADL - independent
+5,Grooming,1,"kept face and hands clean, no physical help",bADL - independent
+5,Grooming,0,"needs help grooming hair, face, hands, nails",bADL - physical help/dependent
+6a,Selected clothes,3,independent,iADL - independent
+6a,Selected clothes,2,with supervision,iADL - supervision needed
+6a,Selected clothes,1,with physical help,iADL - physical help
+6a,Selected clothes,0,did not do,iADL - no participation/dependent
+6b,Get dressed,4,independent,bADL - independent
+6b,Get dressed,3,with supervision,bADL - supervision needed
+6b,Get dressed,2,"physical help only for buttons, clasps, laces",bADL - minor/limited assistance
+6b,Get dressed,1,dressed with no help if clothes needed no fastening or buttoning,bADL - minor/limited assistance
+6b,Get dressed,0,needed help regardless of clothing type,bADL - physical help/dependent
+7,Telephone,5,"made calls, looked up numbers or used directory assistance",iADL - independent
+7,Telephone,4,"made calls only to well-known numbers, without directory or list",iADL - reduced level of independent function
+7,Telephone,3,"made calls only to well know numbers, with directory or list",iADL - reduced level of independent function
+7,Telephone,2,"answered phone, but did not dial out",iADL - limited assistance/ supervision needed
+7,Telephone,1,"did not answer phone, but spoke if put on the line",iADL - physical help
+7,Telephone,0,did not use phone,iADL - no participation/dependent
+10,Cleared dishes from table,3,independent,iADL - independent
+10,Cleared dishes from table,2,with supervision,iADL - supervision needed
+10,Cleared dishes from table,1,with physical help,iADL - physical help
+10,Cleared dishes from table,0,did not do,iADL - no participation/dependent
+11,Find personal belongings,3,independent,iADL - independent
+11,Find personal belongings,2,with supervision,iADL - supervision needed
+11,Find personal belongings,1,with physical help,iADL - physical help
+11,Find personal belongings,0,did not do,iADL - no participation/dependent
+12,Obtain hot or cold beverage,3,made hot beverage,iADL - independent
+12,Obtain hot or cold beverage,2,made hot beverage if someone heated the water,iADL – supervision needed
+12,Obtain hot or cold beverage,1,obtained cold beverage without help,iADL – supervision needed
+12,Obtain hot or cold beverage,0,did not do,iADL - no participation/dependent
+13,Make meal or snack,4,cooked or microwaved food with little or no help,iADL - independent
+13,Make meal or snack,3,cooked or microwaved food with extensive help,iADL - supervision needed
+13,Make meal or snack,2,"mixed or combined food without cooking/microwave (e.g., made sandwich)",iADL – supervision needed
+13,Make meal or snack,1,obtained food without mixing or cooking,iADL - physical help
+13,Make meal or snack,0,did not do,iADL – physical help
+14,Disposed of garbage,3,independent,iADL - independent
+14,Disposed of garbage,2,with supervision,iADL - supervision needed
+14,Disposed of garbage,1,with physical help,iADL - physical help
+14,Disposed of garbage,0,did not do,iADL - no participation/dependent
+15,Getting around outside home,4,"alone, >1 mile",iADL - independent
+15,Getting around outside home,3,"alone, £1 mile",iADL - reduced level of independent function
+15,Getting around outside home,2,accompanied/supervised,iADL - supervision needed
+15,Getting around outside home,1,physical help,iADL - physical help
+15,Getting around outside home,0,did not leave home,iADL - no participation/dependent
+16a,Shopping: selected items,3,independent,iADL - independent
+16a,Shopping: selected items,2,with some supervision or help,iADL - supervision needed
+16a,Shopping: selected items,1,not at all or selected random or inappropriate items,iADL - physical help
+16a,Shopping: selected items,0,did not go shopping,iADL - no participation/dependent
+16b,Shopping: pay without supervision or physical help,1,yes,iADL - independent
+16b,Shopping: pay without supervision or physical help,0,no,iADL - limited assistance – supervision needed
+16b,Shopping: pay without supervision or physical help,0,did not go shopping,iADL - no participation/dependent
+17,Keeping appointments or meetings,3,"usually remembered, may have needed written reminders",iADL - independent
+17,Keeping appointments or meetings,2,only remembered the appointment after verbal reminders on the day,iADL - supervision needed
+17,Keeping appointments or meetings,1,"usually did not remember, in spite of verbal reminders on the day",iADL - physical help
+17,Keeping appointments or meetings,0,did not keep appointments,iADL - no participation/dependent
+18,Home alone,3,away from home 15 min or longer during the day,iADL - independent
+18,Home alone,2,at home alone 1 hr or longer during the day,iADL - reduced level of independent function
+18,Home alone,1,at home alone <1 hr during the day,iADL - supervision needed
+18,Home alone,0,not left alone,iADL - no participation/dependent
+21,Most complicated things wrote down,3,letters or long notes that other people understood,iADL - independent
+21,Most complicated things wrote down,2,short notes or messages that others understood,iADL - reduced level of independent function
+21,Most complicated things wrote down,1,his/her signature or name,iADL - physical help
+21,Most complicated things wrote down,0,did not write things,iADL - no participation/dependent
+22,"Usually performed his/her most common pastime, hobby or game",3,without supervision or help,iADL - independent
+22,"Usually performed his/her most common pastime, hobby or game",2,with supervision,iADL - supervision needed
+22,"Usually performed his/her most common pastime, hobby or game",1,with physical help,iADL - physical help
+22,"Usually performed his/her most common pastime, hobby or game",0,"did not perform any pastimes, hobbies or games",iADL - no participation/dependent
+23,Using household appliances to do chores,4,"without help, operating more than on-off controls if needed",iADL - independent
+23,Using household appliances to do chores,3,"without help, but operated only on-off controls",iADL - reduced level of independent function
+23,Using household appliances to do chores,2,"with supervision, but no physical help",iADL - supervision needed
+23,Using household appliances to do chores,1,with physical help,iADL - physical help
+23,Using household appliances to do chores,0,did not use household appliances to do chores,iADL - no participation/dependent
+Abbreviations: ADCS=Alzheimer’s Disease Cooperative Study; ADL=Activities of Daily Living Inventory; bADL=Basic Activities of Daily Living Inventory; iADL=Instrumental Activities of Daily Living Inventory,Abbreviations: ADCS=Alzheimer’s Disease Cooperative Study; ADL=Activities of Daily Living Inventory; bADL=Basic Activities of Daily Living Inventory; iADL=Instrumental Activities of Daily Living Inventory,Abbreviations: ADCS=Alzheimer’s Disease Cooperative Study; ADL=Activities of Daily Living Inventory; bADL=Basic Activities of Daily Living Inventory; iADL=Instrumental Activities of Daily Living Inventory,Abbreviations: ADCS=Alzheimer’s Disease Cooperative Study; ADL=Activities of Daily Living Inventory; bADL=Basic Activities of Daily Living Inventory; iADL=Instrumental Activities of Daily Living Inventory,Abbreviations: ADCS=Alzheimer’s Disease Cooperative Study; ADL=Activities of Daily Living Inventory; bADL=Basic Activities of Daily Living Inventory; iADL=Instrumental Activities of Daily Living Inventory

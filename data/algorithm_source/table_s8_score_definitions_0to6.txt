@@ -1,0 +1,149 @@
+Score 0: Independent iADL and bADL functioning
+
+bADL independent:  
+   Score >1 on item 1 
+   Score >2 on items 2, 3, 4 
+   Score >0 on item 5 
+   Score >3 on item 6b   
+
+AND
+
+iADL independent:  
+   Score >0 on item 16b 
+   Score >2 on items 6a, 10, 11, 12,14,16a, 17,18, 21, 22 
+   Score >3 on items 13,15, 23 
+   Score >4 on item 7 
+
+---
+
+Score 1: Reduced performance or supervision on isolated iADLs 
+
+Reduced level of independent function or supervision needed on 1 or 2 iADLs.  No impairment on bADLs.
+
+{Meets score threshold below for up to two items: 
+   Score <3 on iADL items 6a,10, 11,12, 14, 16a, 17,18, 21, 22 
+   Score <4 on iADL items 13, 15, 23  
+   Score <5 on iADL item 7 
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)} 
+
+AND
+
+bADL independent: 
+ Score >1 on item 1  
+ Score >2 on items 2,3,4   
+ Score >0 on item 5 
+ Score >3 on item 6b 
+
+---
+
+Score 2: Reduced performance or supervision needed on multiple iADLs or physical help needed for isolated iADLs.  
+
+Reduced level of independent function or supervision needed on 3 or more iADLs
+
+{Meets score threshold below for three or more items: 
+   Score <3 on iADL items 6a,10, 11,12, 14, 16a, 17,18, 21, 22 
+   Score <4 on iADL items 13, 15, 23 
+   Score <5 on iADL item 7 
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)} 
+  
+ OR
+
+Reduced level of independent function or supervision needed on 2 or more iADLs
+
+   {Meets score threshold for two or more items above 
+    AND Reduced level of independent function or supervision/limited assistance on 1 or more  bADLs  
+ [Meets score threshold for 1 or more items below 
+    Score <4 on bADL item 6b    
+    Score <3 on bADL items 2, 3, 4 
+    Score <2 on bADL item 1]   
+
+---
+
+Score 3: Physical help needed for multiple iADLs or reduced performance, supervision/ minor assistance needed for bADLs
+
+Physical/significant help needed or lack of participation on 3 or more iADLs only  
+ {Meets score threshold for 3 or more items below 
+   Score <2 on iADL items 6a, 7, 10, 11,13, 14, 15, 16a,17, 21, 22, 23 
+   Score <1 on iADL items 12, 18  
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)}
+
+OR
+
+Physical/significant help needed or lack of participation on 2 iADL AND  
+Reduced level of independent function, supervision/minor assistance on 1 or more  bADLs  
+  
+ { [Meets score threshold  for 2 or more iADLs  items below  
+    Score <2  on iADL items 6a, 7, 10, 11, 13, 14, 15, 16a, 17,21, 22, 23   
+    Score <1 on iADL items 12, 18 
+    (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)] 
+   AND 
+ [Meets score threshold for 1 or more items below 
+    Score <4 on bADL item 6b    
+    Score <3 on bADL items 2, 3, 4 
+    Score <2 on bADL item 1]} 
+
+---
+
+Score 4: Significant help for 4 or more ADLs of which 3 must be iADLs and 1 must be bADL
+
+Physical/significant help needed or lack of participation on 3 or more iADLs from the following 
+ {Meets score threshold for 3 or more items below 
+   Score <2 on iADL items 6a, 7, 10, 11,13, 14, 15, 16a,17, 21, 22, 23 
+   Score <1 on iADL items 12, 18  
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)}
+
+AND
+
+Reduced level of independent function, supervision/minor assistance on 1 or more  bADLs  
+ {Meets score threshold for 1 or more items below 
+    Score <4 on bADL item 6b    
+    Score <3 on bADL items 2, 3, 4 
+    Score <2 on bADL item 1} 
+
+---
+
+Score 5: Requires physical help for bADLs
+
+Physical help on 1 or more  bADLs AND [Physical/significant help needed or lack of participation on 2 or more iADLs OR Impairment (at any level) on 4 or more iADLs] 
+ {Meets score threshold for 1 or more items below 
+    Score <2 on bADL items 2, 3  
+    Score <1 on bADL items 1, 4, 5, 6b}
+
+AND 
+
+{[ Meets score threshold for 2 or more items below 
+   Score <2 on iADL items 6a, 7, 10, 11, 13, 14, 15, 16a, 17, 21, 22, 23 
+   Score <1 on iADL item 12, 18 
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)] 
+ 
+
+OR
+
+[ Meets score threshold below for 4 or more items: 
+   Score <3 on iADL items 6a, 10, 11,12, 14, 16a, 17,18, 21, 22 
+   Score <4 on iADL items 13, 15, 23 
+   Score <5 on iADL item 7   
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)]} 
+   
+
+---
+
+Score 6: Reliant on others for basic needs (eating, walking or toileting)
+
+{Item Score= 0 for Walking (Q2) or Toileting (Q3) or Feeding (Q1)}
+
+AND
+
+{Impairment (at any level) on 4 or more iADLs  
+ Meets score threshold below for 4 or more items: 
+   Score <3 on iADL items 6a, 10, 11,12, 14, 16a, 17,18, 21, 22 
+   Score <4  on iADL items 13, 15, 23 
+   Score <5 on iADL item 7   
+   (Score >0 on iADL item 16a AND Score = 0 on iADL item 16b)}
+
+---
+
+Abbreviations: ADCS=Alzheimer’s Disease Cooperative Study; ADL=Activities of Daily Living Inventory; bADL=Basic Activities of Daily Living Inventory; iADL=Instrumental Activities of Daily Living Inventory; Q=Question
+
+---
+

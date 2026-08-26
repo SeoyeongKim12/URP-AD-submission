@@ -1,0 +1,8 @@
+﻿param,value
+C,0.1
+l1_ratio,0.5
+tuning,severe_first(중증우선)
+a0_target_miss,0.1775
+tau4,0.1
+tau5,0.525
+train_n,2203
