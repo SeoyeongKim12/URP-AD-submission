@@ -1,4 +1,0 @@
-﻿held_out_STUDYID,min_samples_leaf,max_features,sample_fraction
-AD-1061,5,0.33,0.3
-AD-1063,5,all_items(None),0.3
-AD-1064,5,0.33,0.3
