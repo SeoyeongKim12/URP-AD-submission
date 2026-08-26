@@ -1,5 +1,7 @@
 # 데이터 명세서 — 의존도(Dependence Scale) 연구 전처리 산출물
 
+> **읽기 전 참고**: 아래는 `preprocess_dependence_study.py`(`code/01_전처리/01_preprocess_dependence_study.py`)를 직접 실행했을 때 나오는 **parquet** 산출물 기준 설명이다. 팀 대부분은 이 스크립트를 직접 돌리지 않고, 아래와 동일한 내용을 **csv로 변환해 드라이브에 미리 올려둔 것**(`전처리/전처리 산출물/`)을 받아 `~/Downloads/`에 두고 바로 쓴다 — 컬럼 정의·파생 로직·검증 내역은 parquet든 csv든 완전히 동일하다. 파일 형식만 다르고, 여기 서술된 모든 내용(처리 과정·검증 결과·주의사항)은 그대로 적용된다.
+
 작성 기준: `preprocess_dependence_study.py` 실행 결과 (실행일 2026-08-04)
 원천 데이터: CPAD `1_fullExportDb-2011-Member-CSV/dm.csv`, `qs.csv`
 대상 시험: AD-1061 · AD-1063 · AD-1064 (경도~중등도 AD, 24주 3상, 연구계획서 2.1)
