@@ -1,4 +1,4 @@
-# Aim 1 완결 종합 결과 (sjlee)
+# Aim 1 완결 종합 결과
 
 분석일: 2026-08-05  |  상태: **Aim 1 완결** (가 주분석 + 가 민감도 + 나 감독시간)
 분석 코드: `aim1_formal.py`(가), `aim1_sensitivity.py`(가 민감도), `aim1_supervision.py`(나)
