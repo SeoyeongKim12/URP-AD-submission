@@ -10,7 +10,7 @@ import matplotlib
 matplotlib.rcParams["font.family"] = ["Malgun Gothic", "AppleGothic", "sans-serif"]
 matplotlib.rcParams["axes.unicode_minus"] = False
 
-AUX_DIR = Path(r"C:\Users\USER\Documents\urp-AD\보조 검증")
+AUX_DIR = Path(__file__).resolve().parent.parent  # 03_aim2/보조검증/ (02,03_gn_*.py 산출물 위치)
 OUT_DIR = AUX_DIR / "시각화"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

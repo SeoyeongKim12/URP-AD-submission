@@ -20,8 +20,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-CPAD = Path.home().parent  # placeholder; 실제 경로는 아래 QS_PATH
-QS_PATH = Path(r"C:\Users\user\OneDrive - 이화여자대학교\cpad 데이터\qs.csv")
+QS_PATH = Path.home() / "Downloads" / "1_fullExportDb-2011-Member-CSV" / "qs.csv"  # 원자료 위치
 
 BADL = ["ADL0101", "ADL0102", "ADL0103", "ADL0104", "ADL0105", "ADL0106B"]
 IADL = ["ADL0106A", "ADL0107A", "ADL0110A", "ADL0111A", "ADL0112A", "ADL0113A",

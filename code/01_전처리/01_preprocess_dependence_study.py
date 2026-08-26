@@ -46,12 +46,12 @@ from pathlib import Path
 # 0. 설정
 # ------------------------------------------------------------------
 
-RAW_DIR = Path("C:\\Users\\USER\\Documents\\urp-AD\\1_fullExportDb-2011-Member-CSV")
-OUT_DIR = Path("C:\\Users\\USER\\Documents\\urp-AD\\dependence_study")
+RAW_DIR = Path.home() / "Downloads" / "1_fullExportDb-2011-Member-CSV"  # 원자료(dm.csv, qs.csv) 위치
+OUT_DIR = Path.home() / "Downloads" / "preprocessed"  # parquet 산출 위치 (TRAIN_DIR과 동일해야 함)
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # 중간 산출물은 로컬(빠른) 경로에 두고, 최종 parquet만 OUT_DIR(마운트)에 씀
-SCRATCH_DIR = Path("C:\\Users\\USER\\Documents\\urp-AD\\scratch")
+SCRATCH_DIR = Path.home() / "Downloads" / "scratch"  # 임시 작업 폴더
 SCRATCH_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_STUDIES = ["AD-1061", "AD-1063", "AD-1064"]

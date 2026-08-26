@@ -44,7 +44,14 @@ pd.set_option('display.max_columns', 100)
 np.random.seed(42)
 
 # ===== CONFIG =====
-DATA_DIR = '/content/drive/MyDrive/2026 urp/preprocessed'
+# Colab에서 실행하면 Drive 경로, 로컬(PC)에서 실행하면 ~/Downloads/preprocessed 사용
+try:
+    from google.colab import drive
+    drive.mount('/content/drive')
+    DATA_DIR = '/content/drive/MyDrive/2026 urp/preprocessed'
+except ImportError:
+    from pathlib import Path
+    DATA_DIR = str(Path.home() / "Downloads" / "preprocessed")
 
 TAU4, TAU5 = 0.08, 0.56          # Aim2 확정 임계값
 BOOTSTRAP_B = 2000                 # 확정: B=2000

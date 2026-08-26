@@ -35,7 +35,7 @@ from sklearn.preprocessing import StandardScaler
 # =================================================================
 # 설정
 # =================================================================
-TRAIN_DIR = Path(r"C:\Users\USER\Documents\urp-AD\dependence_study")
+TRAIN_DIR = Path.home() / "Downloads" / "preprocessed"  # 01_전처리/01_preprocess_dependence_study.py의 OUT_DIR과 동일
 OUT_DIR = Path(__file__).parent
 
 TRIALS = ["AD-1061", "AD-1063", "AD-1064"]

@@ -7,6 +7,7 @@ CPAD EDA Script
 
 import os
 import glob
+from pathlib import Path
 import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
@@ -14,7 +15,7 @@ warnings.filterwarnings("ignore")
 # ───────────────────────────────────────────
 # 설정: CSV 파일 경로
 # ───────────────────────────────────────────
-DATA_DIR = "/Users/siyeon/Documents/urp AD/1_fullExportDb-2011-Member-CSV"   # ← 여기를 실제 경로로 변경
+DATA_DIR = str(Path.home() / "Downloads" / "1_fullExportDb-2011-Member-CSV")  # 사용자 홈 기준 (환경마다 이 폴더에 원자료 CSV 위치)
 
 pd.set_option("display.max_columns", 20)
 pd.set_option("display.width", 120)
