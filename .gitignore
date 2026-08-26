@@ -10,6 +10,7 @@ supervision_time.csv
 *ipw_weights*.csv
 *cluster_assign*.csv
 aim3_long_*.csv
+b2_dev_test_split_RECON.csv
 
 # === 환경/캐시/임시 ===
 venv/
