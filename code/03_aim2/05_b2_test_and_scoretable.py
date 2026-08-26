@@ -15,8 +15,6 @@ from sklearn.metrics import cohen_kappa_score
 warnings.filterwarnings("ignore")
 
 HERE=Path(__file__).parent
-REC=Path(r"C:/Users/user/OneDrive - 이화여자대학교/문서/urp-AD/03_aim2/보조검증")
-sys.path.insert(0,str(REC)); import _recon_from_raw as R
 DL=Path.home()/"Downloads"
 TRIALS=["AD-1061","AD-1063","AD-1064"]; STAGES=np.arange(6)
 GRID=np.round(np.arange(0.02,0.60,0.02),2)
@@ -68,7 +66,11 @@ def tune(Ptr,ytr,budget):
     return best[1],best[2]
 
 # ---- 데이터 + 공식 재현 분할 ----
-rec=R.build_from_raw(TRIALS)
+# 04_b2_verify_pipeline.py와 동일한 이유로 adl_wide.csv 직접 사용
+rec = pd.read_csv(DL / "adl_wide.csv", low_memory=False)
+rec = rec[rec["VISITNUM"] == 2.0].copy()  # 기저 방문만
+_adl_items = sorted({item for cols in CAND.values() for item in cols})  # CAND에 실제 쓰이는 문항만
+rec = rec[["STUDYID", "USUBJID"] + _adl_items].copy()  # ds_stage/A0_harmonized 등과 이름 충돌 방지
 bs=pd.read_csv(DL/"baseline_sample.csv")
 com=bs[bs["in_common_comparison_sample"]==True][["STUDYID","USUBJID","ds_stage","A0_harmonized","A1_2015_stage"]].copy()
 com["ds_stage"]=com["ds_stage"].astype(int)

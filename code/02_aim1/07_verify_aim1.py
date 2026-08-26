@@ -3,11 +3,11 @@ Aim 1 결과 독립 검증 코드
 ==================================
 목적: 팀원이 산출한 aim1/ 결과물(Aim1_정식결과.md, aim1_*_report.md,
 aim1_common_sample_scored.csv 등)을 팀원 코드(aim1_formal.py 등)를 실행하지 않고,
-원자료(dependence_study_csv/)에서 처음부터 새로 짠 코드로 핵심 수치를 재계산해 대조한다.
+원자료(~/Downloads/)에서 처음부터 새로 짠 코드로 핵심 수치를 재계산해 대조한다.
 
 검증 대상: 계획서(연구계획서 PDF, Aim 1) §2.3 "가"(준거타당도)·"나"(감독시간 관련성).
 
-입력(원자료, urp-AD/dependence_study_csv/):
+입력(원자료, ~/Downloads/):
   - baseline_sample.csv : 기저 분석표본 + ds_stage/A0_harmonized/A1_2015_stage
   - mmse_wide.csv        : MMSE 총점(방문별)
   - supervision_time.csv : RUD 감독시간 파생값
@@ -29,7 +29,7 @@ import numpy as np
 from sklearn.metrics import cohen_kappa_score
 from scipy.stats import spearmanr
 
-RAW_DIR = Path(__file__).parent / "dependence_study_csv"
+RAW_DIR = Path.home() / "Downloads"  # 다른 스크립트들과 동일하게 통일 (dependence_study_csv 서브폴더 불필요)
 OUT = []
 
 

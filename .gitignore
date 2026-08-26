@@ -20,6 +20,7 @@ __pycache__/
 .RData
 run.log
 *.xlsx
+Rplots.pdf
 
 # === 환자단위 산출 폴더 (파일명 패턴에 안 걸리는 것도 폴더째 확실히 차단) ===
 aim1_patient_level/

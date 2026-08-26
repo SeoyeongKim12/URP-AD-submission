@@ -1,2 +1,2 @@
 ﻿rule,tau4,tau5,budget_A0_miss,decision,n_train,penalty
-asymmetric_threshold,0.08,0.56,17.81,p5=P(Y=5); p4=P(Y>=4); 예측=5 if p5>tau5 elif 4 if p4>tau4 else 조건부중앙값,2196,"L2(C=1.0, standardized)"
+asymmetric_threshold,0.16,0.46,47.78,p5=P(Y=5); p4=P(Y>=4); 예측=5 if p5>tau5 elif 4 if p4>tau4 else 조건부중앙값,1358,"L2(C=1.0, standardized)"

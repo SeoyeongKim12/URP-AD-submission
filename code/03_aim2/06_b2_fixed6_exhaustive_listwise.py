@@ -39,7 +39,15 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from joblib import Parallel, delayed
 
-import b1_dominate_a0 as D
+import importlib.util as _ilu
+
+def _load_module(name, filename):
+    spec = _ilu.spec_from_file_location(name, Path(__file__).parent / filename)
+    mod = _ilu.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+D = _load_module("b1_dominate_a0", "02_b1_dominate_a0.py")  # 번호 접두사가 붙은 실제 파일명으로 동적 로드
 
 OUTDIR = Path(__file__).parent
 FIXED = ["ADL0103", "ADL0104", "ADL0105", "ADL0106A", "ADL0115A", "ADL0116A"]
