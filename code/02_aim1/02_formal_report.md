@@ -1,4 +1,4 @@
-# Aim 1 정식 분석 리포트 (sjlee)
+# Aim 1 정식 분석 리포트
 
 입력 확보: ds_wide✓ adl_wide✓ baseline_sample✓ mmse_wide✓
 
